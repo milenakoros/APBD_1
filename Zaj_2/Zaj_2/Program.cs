@@ -13,8 +13,10 @@ public class Program
         string s2 = s;
         s2 = "Ola";
         Console.WriteLine(s + "  " + s2);
+        Console.WriteLine("hello");
+
         //String a string
-        
+
 
     }
 }

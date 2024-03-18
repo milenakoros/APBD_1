@@ -12,14 +12,14 @@ public class Program
         Console.WriteLine("Hello");
 
 
-        Console.WriteLine("Średnia dla tablicy {1,2,3,4,2,3} to: " + CalculateAvg(new []{1,2,3,4,2,3}));
+        Console.WriteLine("Średnia dla tablicy {1,2,3,4,2,3} to: " + CalculateAverage(new []{1,2,3,4,2,3}));
         //String a string
         
         Console.WriteLine("Max wartosc dla tablicy {1,2,3,4,2,3} to: " + Max(new []{1,2,3,4,2,3}));
 
     }
 
-    public static double CalculateAvg(int[] numbers)
+    public static double CalculateAverage(int[] numbers)
     {
         if (numbers == null || numbers.Length == 0)
         {
@@ -28,9 +28,9 @@ public class Program
         }
 
         double sum = 0;
-        foreach (var x in numbers)
+        foreach (var number in numbers)
         {
-            sum += x;
+            sum += number;
         }
 
         return sum / numbers.Length;
